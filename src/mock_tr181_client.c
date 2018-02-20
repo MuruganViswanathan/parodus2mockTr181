@@ -21,7 +21,7 @@
 #include "mock_tr181_client.h"
 #include "mock_tr181_adapter.h"
 
-#include <hiredis.h>
+#include <hiredis/hiredis.h>
 
 /*----------------------------------------------------------------------------*/
 /*                                   Macros                                   */

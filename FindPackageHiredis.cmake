@@ -2,7 +2,7 @@
 #
 FIND_PATH(HIREDIS_INCLUDE 
 	hiredis.h 
-	/usr/local/include/hiredis/library)
+	/usr/local/include/hiredis)
 	
 FIND_LIBRARY(HIREDIS_LIBRARY 
 	NAMES hiredis 
