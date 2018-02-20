@@ -48,6 +48,11 @@ include_directories(${INCLUDE_DIR}/cJSON
 include_directories (SYSTEM /usr/include)
 
 
+#find hiredis package 
+#--------------------------------------------------------------------------------
+include(FindPackageHiredis.cmake)
+
+
 # pthread external dependency
 #-------------------------------------------------------------------------------
 find_package (Threads)
