@@ -26,8 +26,9 @@
 /*----------------------------------------------------------------------------*/
 /*                             Function Prototypes                            */
 /*----------------------------------------------------------------------------*/
-void connect_tr181_db();
-char*  redis_tr181_param_get(char* key);
+void mock_tr181_connect();
+
+char*  mock_tr181_param_get(char* key);
 
 int readFromDB(char **data);
 

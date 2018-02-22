@@ -31,7 +31,7 @@ static redisContext *g_redisContext = NULL;
  * returns 0 - failure
  *         1 - success
  */
-static int redis_tr181_db_init()
+static int mock_tr181_db_init()
 {
 	if (g_redisContext == NULL)
 	{
@@ -59,13 +59,13 @@ static int redis_tr181_db_init()
 }
 
 
-void connect_tr181_db()
+void mock_tr181_connect()
 {
 	int count = 3;
 
 	while (count--)
 	{
-		if (redis_tr181_db_init())
+		if (mock_tr181_db_init())
 		{
 			Info("Connection to Tr181 DB Success.\n");
 			break;
@@ -86,14 +86,14 @@ void connect_tr181_db()
  * Returns value or Error as null terminated string.
  * NOTE: Caller should free return value char*
  */
-char*  redis_tr181_param_get(char* key)
+char*  mock_tr181_param_get(char* key)
 {
 	char* value = NULL;
 
 	if(g_redisContext == NULL)
 	{
 		Error("Not connected to Tr181 DB ! Attempting to connect...");
-		connect_tr181_db();
+		mock_tr181_connect();
 	}
 
 	if(g_redisContext)

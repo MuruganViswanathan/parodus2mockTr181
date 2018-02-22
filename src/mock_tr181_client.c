@@ -324,7 +324,7 @@ static void processRequest(char *reqPayload, char **resPayload)
 
 					/* query for individual parameter */
 
-					char *val = redis_tr181_param_get(reqObj->u.getReq->paramNames[i]);
+					char *val = mock_tr181_param_get(reqObj->u.getReq->paramNames[i]);
 					if (val)
 					{
 						resObj->u.getRes->params[i] = (param_t *) malloc(sizeof(param_t));
