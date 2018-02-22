@@ -21,7 +21,7 @@
 int main()
 {
 	connect_parodus();
-	connect_tr181_db();
+	mock_tr181_connect();
 	startParodusReceiveThread();
 	sleep(5);
 
