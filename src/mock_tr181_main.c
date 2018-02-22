@@ -20,6 +20,7 @@
 int main()
 {
 	connect_parodus();
+	connect_tr181_db();
 	startParodusReceiveThread();
 	sleep(5);
 
