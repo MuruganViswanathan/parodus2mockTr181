@@ -36,6 +36,7 @@ target_link_libraries (${PROJ_MOCK_TR181}
                        -lpthread
                        -llibparodus
                        -lrt
+                       -lhiredis
                        )
     
 install (TARGETS ${PROJ_MOCK_TR181} DESTINATION bin)
