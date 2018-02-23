@@ -35,6 +35,7 @@ target_link_libraries (simple  gcov  cunit
                        -lpthread
                        -llibparodus
                        -lrt 
+                       -lhiredis
                        )
 
 add_custom_target(coverage
